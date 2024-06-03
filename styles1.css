@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: linear-gradient(to bottom, #031c7d, #2200ff);
     color: white;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    justify-content: space-between;
     transition: background-color 1s ease, box-shadow 1s ease;
     animation: gradientChange 10s infinite alternate;
 }
@@ -125,9 +131,6 @@ footer {
     padding: 20px;
     text-align: center;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 .bonus-history {
